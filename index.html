@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Coffee Shops</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5efe6;
+    color: #3b2b20;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #3b2b20;
+    color: #f5efe6;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+
+  header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #d8c3a5;
+    font-style: italic;
+  }
+
+  nav {
+    background-color: #6f4e37;
+    text-align: center;
+    padding: 12px;
+  }
+
+  nav a {
+    color: #f5efe6;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .intro {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .intro h2 {
+    color: #6f4e37;
+    margin-bottom: 15px;
+  }
+
+  .shops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+  }
+
+  .card {
+    background-color: #fffaf3;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(59, 43, 32, 0.15);
+    border-top: 4px solid #6f4e37;
+  }
+
+  .card h3 {
+    color: #3b2b20;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+  }
+
+  .card .location {
+    color: #a9784f;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+
+  .card .rating {
+    color: #c98a2c;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card p.desc {
+    font-size: 0.95rem;
+    color: #4a382c;
+  }
+
+  footer {
+    background-color: #3b2b20;
+    color: #d8c3a5;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>&#9749; Best Coffee Shops</h1>
+    <p>A small guide to great cups of coffee</p>
+  </header>
+
+  <nav>
+    <a href="#shops">Shops</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="intro" id="about">
+    <h2>Why This List?</h2>
+    <p>Every great day starts with a great cup of coffee. Here are a few favorites known for their atmosphere, quality beans, and the kind of coffee that makes you want to stay a little longer.</p>
+  </section>
+
+  <section class="shops" id="shops">
+
+    <div class="card">
+      <h3>The Roasted Bean</h3>
+      <div class="location">Downtown Corner Cafe</div>
+      <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8</div>
+      <p class="desc">Known for its single-origin pour-overs and warm, wood-paneled seating. A favorite for slow mornings and quiet work sessions.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mountain Brew Co.</h3>
+      <div class="location">Hillside Avenue</div>
+      <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.6</div>
+      <p class="desc">A cozy spot with a view, famous for their cold brew and freshly baked cinnamon rolls. Great for weekend visits.</p>
+    </div>
+
+    <div class="card">
+      <h3>Steam &amp; Stone</h3>
+      <div class="location">Old Market Street</div>
+      <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; 4.3</div>
+      <p class="desc">A minimalist space with exposed brick and expertly pulled espresso shots. Perfect for a quick, high-quality coffee stop.</p>
+    </div>
+
+    <div class="card">
+      <h3>The Daily Grind</h3>
+      <div class="location">Riverside Walk</div>
+      <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.7</div>
+      <p class="desc">Friendly baristas, house-made syrups, and a menu that changes with the seasons. A local favorite for years.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fern &amp; Filter</h3>
+      <div class="location">Green Park Lane</div>
+      <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; 4.4</div>
+      <p class="desc">A plant-filled hideaway with excellent oat milk lattes and a peaceful reading corner.</p>
+    </div>
+
+    <div class="card">
+      <h3>Copper Kettle</h3>
+      <div class="location">Station Road</div>
+      <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; 4.5</div>
+      <p class="desc">Old-school charm with a modern menu. Their signature spiced latte is worth the trip alone.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Made for a cloud deployment demo &middot; Hosted on Microsoft Azure App Service</p>
+  </footer>
+
+</body>
+</html>
